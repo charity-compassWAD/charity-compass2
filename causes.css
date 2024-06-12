@@ -1,8 +1,8 @@
 /* Reset some default styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Styles for the body */
@@ -18,77 +18,62 @@ body {
 }
 
 .hero {
-    background-color: rgb(249, 89, 3);
-    border: 7px solid black;
-    padding: 20px;
+  max-width: 1200px;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  color: #ffffff; /* White text color */
-  padding: 10px 20px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
+  padding: 10px 15px;
   backdrop-filter: blur(10px); /* Apply blur for glass effect */
   background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
   border-bottom: 1px solid rgba(255, 255, 255, 0.18); /* Light border */
-  box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37); /* Optional shadow */
+  box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box;
 }
 
-
-  
-
-
-.logo {
+.icon {
   display: flex;
   align-items: center;
-  
-
 }
-nav .logo img {
-  
+
+.icon img {
+  width: 50px;
+  height: 50px;
   margin-right: 10px;
 }
-nav h1 {
+
+.icon h1 {
   font-size: 24px;
   margin: 0;
   color: #ee5a24;
 }
 
-
-nav ul {
-    
+.navmenu ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   align-items: center;
-  
-
 }
 
-nav ul li {
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 500;
-    margin: 0px 20px;
-    color: #191503;
+.navmenu ul li {
+  display: inline-block;
+  margin: 10px 15px;
 }
 
-nav ul li a {
-    color:#ee5a24 ;
-    display: inline-block;
-  
-    font-weight: 500;
+.navmenu ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
 }
 
-nav ul li a:hover {
-    color: orange;
+.navmenu ul li a:hover {
+  color: orange;
 }
 
 .btn {
@@ -97,109 +82,100 @@ nav ul li a:hover {
   font-weight: 400;
   color: black;
   padding: 14px 40px;
-  background-image: linear-gradient(45deg, rgb(249, 89, 3), #000000);
+  background: linear-gradient(45deg, #ffef00, #fff000);
   font-size: 14px;
   border-radius: 30px;
   border-top-right-radius: 0;
   transition: 0.5s;
+}
 
+.btn:hover {
+  border-top-right-radius: 30px;
+  background: linear-gradient(45deg, hsl(0, 0%, 7%), hsl(0, 0%, 6%));
+  color: #f6f2f2;
 }
 
 .causes {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    margin-top:8%;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin-top: 8%;
 }
 
 .causes h1 {
-    text-align: center;
-    font-size: 5em;
-    margin-bottom: 20px;
-    background-image: url(need.png);
-    background-size: cover;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+  text-align: center;
+  font-size: 5em;
+  margin-bottom: 20px;
+  background-image: url(need.png);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .causes p {
-    text-align: justify;
-    font-size: 1.2em;
-    font-size: 20px;
-    font-weight: 400;
+  text-align: justify;
+  font-size: 1.2em;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 /* Styles for the tabs section */
 .tabs {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    padding: 20px;
-    margin-top: 8%;
-    
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 20px;
+  margin-top: 8%;
+  margin: 20px;
 }
 
 /* Styles for each tab */
 .tabs > div {
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: rgb(249, 89, 3);
-    border-radius: 5px;
-    
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: rgb(249, 89, 3);
+  border-radius: 5px;
 }
 
 .tabs h2 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .tabs ul {
-    list-style-type: none;
-    padding-left: 0;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .tabs li {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .tabs a {
-    text-decoration: none;
-    color: #e5da0d;
+  text-decoration: none;
+  color: #e5da0d;
 }
 
 .tabs a:hover {
-    color:black;
+  color: black;
 }
 
 .tabs a:visited {
-    color: rgb(3, 3, 3);
+  color: rgb(3, 3, 3);
 }
 
 .footer {
-  backdrop-filter: blur(10px); /* Apply blur for glass effect */
-  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
-  border-top: 1px solid rgba(255, 255, 255, 0.18); /* Light border */
-  color: #e8ef09;
+  background-color: #090909;
   width: 100%;
-  margin-top: 8%;
-border-radius: 5PX;
-  padding: 80px 0 30px;
-  position: relative; /* Ensure proper positioning */
+  position: absolute;
+  padding: 80px 0px 30px;
+  color: #e8ef09;
 }
-
-.footer > div {
-  margin-bottom: 20px;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.6); /* Match the glassy background */
-  border-radius: 5px;
-  border: 2px solid rgba(255, 255, 255, 0.18); /* Light border */
-}
-
 .row {
   display: flex;
   justify-content: space-between;
@@ -208,30 +184,27 @@ border-radius: 5PX;
   margin: auto;
   align-items: flex-start;
 }
-
 .col {
   flex-basis: 18%;
   padding: 10px;
 }
-
 .footer-lists ul {
   list-style: none;
   padding: 0;
 }
-
 .col h3 {
   color: #ee5a24;
 }
 
 .footer-lists ul li {
   margin-bottom: 5px;
+  list-style: none;
 }
 
 .footer-lists ul li a {
   text-decoration: none;
   color: #e5da0d;
 }
-
 form {
   padding-bottom: 15px;
   display: flex;
@@ -240,51 +213,48 @@ form {
   border-bottom: 1px solid #f4770a;
   margin-bottom: 50px;
 }
-
 form img {
   font-size: 18px;
   margin-right: 10px;
 }
-
 form input {
   width: 100%;
   background: transparent;
   color: #e2df0c;
-  border: none;
+  border: 0;
   outline: none;
 }
-
 form button {
   background: transparent;
-  border: none;
+  border: 0;
+  outline: none;
   cursor: pointer;
 }
-
 form button img {
   width: 16px;
   margin-right: 10px;
 }
-
 .social-icons img {
   width: 32px;
   height: 32px;
   border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
   margin-right: 10px;
   cursor: pointer;
 }
-
 .copyright {
   width: 100%;
   color: #e2df0c;
   text-align: center;
-  background: rgba(0, 0, 0, 0.6); /* Match the glassy background */
+  background: #090909;
   font-weight: 300;
-  margin-top: 0;
+  margin-top: 0px;
 }
-
 hr {
   width: 90%;
-  border: none;
+  border: 0;
   border-bottom: 1px solid #f6f2f2;
   margin: 20px auto;
 }
