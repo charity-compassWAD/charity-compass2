@@ -1,0 +1,290 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles for the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-width: 100%;
+  background: linear-gradient(45deg, #f3b23a, #ff4000);
+  position: relative;
+  overflow: auto;
+}
+
+.hero {
+    background-color: rgb(249, 89, 3);
+    border: 7px solid black;
+    padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff; /* White text color */
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px); /* Apply blur for glass effect */
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18); /* Light border */
+  box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37); /* Optional shadow */
+}
+
+
+  
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  
+
+}
+nav .logo img {
+  
+  margin-right: 10px;
+}
+nav h1 {
+  font-size: 24px;
+  margin: 0;
+  color: #ee5a24;
+}
+
+
+nav ul {
+    
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  
+
+}
+
+nav ul li {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0px 20px;
+    color: #191503;
+}
+
+nav ul li a {
+    color:#ee5a24 ;
+    display: inline-block;
+  
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 400;
+  color: black;
+  padding: 14px 40px;
+  background-image: linear-gradient(45deg, rgb(249, 89, 3), #000000);
+  font-size: 14px;
+  border-radius: 30px;
+  border-top-right-radius: 0;
+  transition: 0.5s;
+
+}
+
+.causes {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin-top:8%;
+}
+
+.causes h1 {
+    text-align: center;
+    font-size: 5em;
+    margin-bottom: 20px;
+    background-image: url(need.png);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.causes p {
+    text-align: justify;
+    font-size: 1.2em;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Styles for the tabs section */
+.tabs {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 20px;
+    margin-top: 8%;
+    
+}
+
+/* Styles for each tab */
+.tabs > div {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgb(249, 89, 3);
+    border-radius: 5px;
+    
+}
+
+.tabs h2 {
+    margin-bottom: 10px;
+}
+
+.tabs ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.tabs li {
+    margin-bottom: 5px;
+}
+
+.tabs a {
+    text-decoration: none;
+    color: #e5da0d;
+}
+
+.tabs a:hover {
+    color:black;
+}
+
+.tabs a:visited {
+    color: rgb(3, 3, 3);
+}
+
+.footer {
+  backdrop-filter: blur(10px); /* Apply blur for glass effect */
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  border-top: 1px solid rgba(255, 255, 255, 0.18); /* Light border */
+  color: #e8ef09;
+  width: 100%;
+  margin-top: 8%;
+border-radius: 5PX;
+  padding: 80px 0 30px;
+  position: relative; /* Ensure proper positioning */
+}
+
+.footer > div {
+  margin-bottom: 20px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6); /* Match the glassy background */
+  border-radius: 5px;
+  border: 2px solid rgba(255, 255, 255, 0.18); /* Light border */
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 85%;
+  margin: auto;
+  align-items: flex-start;
+}
+
+.col {
+  flex-basis: 18%;
+  padding: 10px;
+}
+
+.footer-lists ul {
+  list-style: none;
+  padding: 0;
+}
+
+.col h3 {
+  color: #ee5a24;
+}
+
+.footer-lists ul li {
+  margin-bottom: 5px;
+}
+
+.footer-lists ul li a {
+  text-decoration: none;
+  color: #e5da0d;
+}
+
+form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f4770a;
+  margin-bottom: 50px;
+}
+
+form img {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+form input {
+  width: 100%;
+  background: transparent;
+  color: #e2df0c;
+  border: none;
+  outline: none;
+}
+
+form button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+form button img {
+  width: 16px;
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.copyright {
+  width: 100%;
+  color: #e2df0c;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6); /* Match the glassy background */
+  font-weight: 300;
+  margin-top: 0;
+}
+
+hr {
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid #f6f2f2;
+  margin: 20px auto;
+}
