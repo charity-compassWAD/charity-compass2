@@ -153,7 +153,7 @@ nav {
 }
 
 .card {
-    background-color: #fff;
+    background-color: #0f0303;
     width: calc(33.333% - 40px); /* Each card takes up a third of the container minus the gap and padding */
     max-width: 300px; /* Ensures the card doesn't grow too large */
     perspective: 1000px;
@@ -162,6 +162,7 @@ nav {
     box-sizing: border-box; /* Ensures padding and border are included in the total width and height */
     position: relative; /* Ensures that card contents are positioned relative to the card */
     height: 400px; /* Set a fixed height for the cards */
+    border-radius: 10px;
 }
 
 .card-inner {
@@ -188,13 +189,13 @@ nav {
 }
 
 .card-front {
-    background-color: #fff;
-    color: black;
+    background-color: #080000;
+    color: rgb(247, 244, 244);
 }
 
 .card-back {
-    background-color: #f1f1f1;
-    color: black;
+    background-color: #130101;
+    color: rgb(249, 255, 254);
     transform: rotateY(180deg);
 }
 
