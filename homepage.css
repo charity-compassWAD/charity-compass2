@@ -83,7 +83,8 @@ nav {
 
 .btn:hover {
   border-top-right-radius: 30px;
-  background: linear-gradient(45deg, hsl(0, 0%, 7%), hsl(0, 0%, 6%));
+  /*background: linear-gradient(45deg, hsl(0, 0%, 7%), hsl(0, 0%, 6%));*/
+  background: linear-gradient(45deg, #ff6a00, #d7a436);
   color: #f6f2f2;
 }
 
@@ -129,7 +130,8 @@ nav {
 
 .donatebtn .btn:hover {
   color: #f8f8f6;
-  background: linear-gradient(45deg, #ffef00, #ffef00);
+   /*background: linear-gradient(45deg, hsl(0, 0%, 7%), hsl(0, 0%, 6%));*/
+   background: linear-gradient(45deg, #ff6a00, #d7a436);
 }
 .titles {
   text-align: center;
