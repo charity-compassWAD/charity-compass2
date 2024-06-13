@@ -1,0 +1,146 @@
+.input-field .input {
+    height: 45px;
+    width: 87%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: #fff;
+    padding: 0 0 0 42px;
+    background: rgba(255, 255, 255, 0.1);
+}
+i {
+    position: relative;
+    top: -31px;
+    left: 17px;
+    color: #fff;
+}
+::-webkit-input-placeholder {
+    color: #fff;
+}
+span {
+    color: #fff;
+    font-size: small;
+    display: flex; /* Corrected 'felx' to 'flex' */
+    justify-content: center;
+    padding: 10px 0 15px 0;
+    justify-self: center;
+}
+header {
+    color: #fff;
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 15px 0;
+}
+.input-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+* {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-image: url("Wallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height */
+    margin: 0; /* Remove default margin */
+}
+.box {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    flex-flow: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    position: relative; /* Ensure relative positioning for absolute child elements */
+}
+.nav-choose {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+.nav-button {
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s;
+    position: relative; /* Needed for the gradient border effect */
+}
+.nav-button.signup-button {
+    background: transparent; /* Transparent background */
+    color: #fff; /* White text */
+}
+.nav-button.signup-button::before {
+    content: "";
+    position: absolute;
+    top: -2px; /* Adjust to make the border fit */
+    left: -2px; /* Adjust to make the border fit */
+    right: -2px; /* Adjust to make the border fit */
+    bottom: -2px; /* Adjust to make the border fit */
+    border-radius: 30px; /* Same as the button */
+    padding: 2px; /* Adjust based on border thickness */
+    background: linear-gradient(to right, #ff6200, #f5b128); /* Gradient border */
+    z-index: -1;
+}
+.nav-button.login-button {
+    background: linear-gradient(to right, #ff6200, #f5b128); /* Dark orange to light orange gradient */
+    color: #fff; /* White text for contrast */
+}
+.nav-button:hover {
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+.container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.submit {
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 20%;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: .3s;
+    margin-top: 15px;
+}
+.submit:hover {
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+.login-submit {
+    align-self: center;
+}
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: small;
+    color: #fff;
+    margin-top: 10px;
+    font-style: italic;
+}
+.left {
+    display: none; /* Hide the checkbox section */
+}
+label a {
+    color: #fff;
+    text-decoration: none;
+}
