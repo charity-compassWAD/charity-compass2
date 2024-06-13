@@ -1,3 +1,8 @@
+.input-field {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
 .input-field .input {
     height: 45px;
     width: 300px;
@@ -23,14 +28,6 @@ i {
 ::-webkit-input-placeholder {
     color: #fff;
 }
-span {
-    color: #fff;
-    font-size: small;
-    display: flex; 
-    justify-content: center;
-    padding: 10px 0 15px 0;
-    justify-self: center;
-}
 header {
     color: #fff;
     font-family: 'Droid Sans', sans-serif;
@@ -38,12 +35,6 @@ header {
     display: flex;
     justify-content: center;
     padding: 0 0 15px 0;
-}
-.input-field {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-    align-self: center;
 }
 * {
     font-family: 'Poppins', sans-serif;
@@ -75,9 +66,13 @@ body {
 .nav-choose {
     position: absolute;
     top: 10px; 
-    right: 10px; 
+    width:95%; 
     display: flex;
     gap: 10px; 
+    justify-content: space-between;
+}
+.right-items {
+    display: flex;
 }
 .nav-button {
     border: none;
@@ -90,7 +85,25 @@ body {
 }
 .nav-button.login-button {
     background: transparent; 
-    color: #fff; 
+    color: #fff;
+    margin-left:10px;
+}
+.nav-button.home-button {
+    background: transparent; 
+    color: #fff;
+    order: 1;
+}
+.nav-button.home-button::before {
+    content: "";
+    position: absolute;
+    top: -2px; 
+    left: -2px; 
+    right: -2px; 
+    bottom: -2px; 
+    border-radius: 30px; 
+    padding: 2px; 
+    background: linear-gradient(to right, #ff6200, #f5b128);
+    z-index: -1;
 }
 .nav-button.login-button::before {
     content: "";
@@ -107,6 +120,7 @@ body {
 .nav-button.signup-button {
     background: linear-gradient(to right, #ff6200, #f5b128); 
     color: #fff;
+    margin-left:10px;
 }
 .nav-button:hover {
     box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
@@ -123,11 +137,10 @@ body {
     font-size: 15px;
     height: 45px;
     outline: none;
-    width: 40%;
+    width: 70%;
     background: rgba(0, 0, 0, 0.7);
     cursor: pointer;
     transition: .3s;
-    margin-top: 15px;
 }
 .submit:hover {
     box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
@@ -140,7 +153,7 @@ body {
 .bottom {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     font-size: small;
     color: #fff;
     margin-top: 10px;
@@ -150,12 +163,22 @@ label a {
     color: #fff;
     text-decoration: none;
 }
-.logo-home {
+.icon {
+    display: flex;
+    align-items: center;
     position: absolute;
-    bottom: 10px;
     right: 10px;
-}
-.logo-home img {
+    bottom: 10px;
+  }
+  
+.icon img {
     width: 50px;
-    height: auto;
-}
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+.icon h1 {
+    font-size: 17px;
+    margin: 0;
+    color: #ee5a24;
+  }
