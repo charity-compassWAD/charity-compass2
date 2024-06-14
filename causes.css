@@ -82,7 +82,7 @@ nav {
   font-weight: 400;
   color: black;
   padding: 14px 40px;
-  background: linear-gradient(45deg, #ffef00, #fff000);
+  background: linear-gradient(45deg, #d7a436, #ff6a00);
   font-size: 14px;
   border-radius: 30px;
   border-top-right-radius: 0;
@@ -91,7 +91,8 @@ nav {
 
 .btn:hover {
   border-top-right-radius: 30px;
-  background: linear-gradient(45deg, hsl(0, 0%, 7%), hsl(0, 0%, 6%));
+   /*background: linear-gradient(45deg, hsl(0, 0%, 7%), hsl(0, 0%, 6%));*/
+   background: linear-gradient(45deg, #ff6a00, #d7a436);
   color: #f6f2f2;
 }
 
@@ -133,6 +134,19 @@ nav {
   padding: 20px;
   margin-top: 8%;
   margin: 20px;
+}
+.pr{
+  display:inline-block;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 10px 15px;
+margin-right: 0;
+  border-radius: 50%;
+  border-style: double;
+  border-color:black;
+  
+
 }
 
 /* Styles for each tab */

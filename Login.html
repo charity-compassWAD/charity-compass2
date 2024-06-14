@@ -12,10 +12,15 @@
 <body>
     <div class="box">
         <div class="nav-choose">
-            <a href="signup.html">
-                <button class="nav-button signup-button">SIGN UP</button>
+            <a href="Homepage.html">
+                <button class="nav-button home-button">Home</button>
             </a>
-            <button class="nav-button login-button">LOG IN</button>
+            <div class="right-items">
+                <a href="signup.html">
+                    <button class="nav-button signup-button">SIGN UP</button>
+                </a>
+                <button class="nav-button login-button">LOG IN</button>
+            </div>
         </div>
         <div class="container">
             <div class="top-header">
@@ -28,13 +33,9 @@
             <div class="input-field">
                 <input type="password" class="input" placeholder="Password" required>
                 <i class="bx bx-lock-alt"></i>
+                <label class="bottom"><a href="#">Forgot your password?</a></label>
+                <button class="submit login-submit">Login</button>
             </div>
-            <div class="bottom">
-                <div class="right">
-                    <label><a href="#">Forgot your password</a></label>
-                </div>
-            </div>
-            <button class="submit login-submit">Login</button>
         </div>
     </div>
 </body>
