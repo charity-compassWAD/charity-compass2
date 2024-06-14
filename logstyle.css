@@ -1,0 +1,197 @@
+.input-field {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 15px;
+}
+.input-field .input {
+    height: 45px;
+    width: 300px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: #fff;
+    padding: 0 0 0 42px;
+    background: rgba(255, 255, 255, 0.1);
+    align-items: center;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+}
+.input-field .input:focus {
+    border: 1px solid #fff;
+}
+i {
+    position: relative;
+    top: -31px;
+    left: 17px;
+    color: #fff;
+}
+::-webkit-input-placeholder {
+    color: #fff;
+}
+header {
+    color: #fff;
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 15px 0;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-image: url("Wallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+}
+.box {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    flex-flow: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    position: relative; 
+}
+.nav-choose {
+    position: absolute;
+    top: 10px; 
+    width:95%; 
+    display: flex;
+    gap: 10px; 
+    justify-content: space-between;
+}
+.right-items {
+    display: flex;
+}
+.nav-button {
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s;
+    position: relative; 
+}
+.nav-button.signup-button {
+    background: transparent; 
+    color: #fff;
+    margin-left:10px;
+}
+.nav-button.home-button {
+    background: transparent; 
+    color: #fff;
+    order: 1;
+}
+/*.nav-button.home-button:hover {
+    border-top-right-radius: 30px;
+   background: linear-gradient(45deg, #ff6a00, #d7a436);
+  color: #f6f2f2;
+}*/
+.nav-button.home-button::before {
+    content: "";
+    position: absolute;
+    top: -2px; 
+    left: -2px; 
+    right: -2px; 
+    bottom: -2px; 
+    border-radius: 30px; 
+    padding: 2px; 
+    background: linear-gradient(to right, #ff6200, #f5b128);
+    z-index: -1;
+}
+.nav-button.signup-button::before {
+    content: "";
+    position: absolute;
+    top: -2px; 
+    left: -2px; 
+    right: -2px; 
+    bottom: -2px; 
+    border-radius: 30px; 
+    padding: 2px; 
+    background: linear-gradient(to right, #ff6200, #f5b128);
+    z-index: -1;
+}
+.nav-button.login-button {
+    background: linear-gradient(to right, #ff6200, #f5b128); 
+    color: #fff;
+    margin-left:10px;
+}
+.nav-button:hover {
+    background: linear-gradient(to right, #ff6200, #f5b128); 
+    color: #fff;
+    margin-left:10px;
+}
+.container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.submit {
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 35%;
+    background: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    transition: .3s;
+}
+.submit:hover {
+    border-top-right-radius: 30px;
+   /*background: linear-gradient(45deg, hsl(0, 0%, 7%), hsl(0, 0%, 6%));*/
+   background: linear-gradient(45deg, #ff6a00, #d7a436);
+  color: #f6f2f2;
+}
+.login-submit {
+    align-self: center;
+    color: white;
+
+}
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: small;
+    color: #fff;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+label a {
+    color: #fff;
+    text-decoration: none;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+  
+.icon img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .icon h1 {
+    font-size: 17px;
+    margin: 0;
+    color: #ee5a24;
+  }
