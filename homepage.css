@@ -4,7 +4,7 @@ body {
   padding: 0;
   min-height: 100vh;
   min-width: 100%;
-  background: linear-gradient(45deg, #FEB500, #AB2000);
+  background: linear-gradient(45deg, #feb500, #ab2000);
   position: relative;
   overflow: auto;
 }
@@ -130,8 +130,8 @@ nav {
 
 .donatebtn .btn:hover {
   color: #f8f8f6;
-   /*background: linear-gradient(45deg, hsl(0, 0%, 7%), hsl(0, 0%, 6%));*/
-   background: linear-gradient(45deg, #ff6a00, #d7a436);
+  /*background: linear-gradient(45deg, hsl(0, 0%, 7%), hsl(0, 0%, 6%));*/
+  background: linear-gradient(45deg, #ff6a00, #d7a436);
 }
 .titles {
   text-align: center;
@@ -142,6 +142,7 @@ nav {
   width: 90%;
   margin: 0 auto;
   padding: 10px 20px;
+  margin-top: 0px;
 }
 .about {
   display: flex;
