@@ -96,6 +96,54 @@ nav {
   color: #f6f2f2;
 }
 
+
+.donation-container {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 25px;
+  overflow: hidden;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4caf50;
+  width: 0;
+}
+
+.testimonials-container {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.testimonial-carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.testimonial {
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial p {
+  font-size: 1.2em;
+}
+
+.testimonial h3 {
+  font-size: 1em;
+  color: #555;
+}
+
 .causes {
   width: 100%;
   max-width: 800px;
@@ -127,13 +175,43 @@ nav {
 }
 
 /* Styles for the tabs section */
-.tabs {
-  display: flex;
-  flex-direction: column;
-  background-color: black;
+#quiz-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin-top: 8%;
-  margin: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+#quiz-container h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+#quiz-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#quiz-container li {
+  margin-bottom: 10px;
+}
+
+#quiz-container button {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: background 0.3s ease;
+}
+
+#quiz-container button:hover {
+  background: rgba(255, 255, 255, 0.3);
 }
 .pr{
   display:inline-block;
@@ -149,38 +227,70 @@ margin-right: 0;
 
 }
 
-/* Styles for each tab */
-.tabs > div {
-  margin-bottom: 20px;
-  padding: 10px;
-  background-color: rgb(249, 89, 3);
-  border-radius: 5px;
+.causes-container {
+  width: 90%;
+
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 3px solid rgba(238, 145, 6, 0.144);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
 }
 
-.tabs h2 {
+.causes-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+ 
+}
+
+.cause-item {
+  flex: 0 0 auto;
+  width: 300px;
+  margin-right: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  border: 5px solid orange;
+  box-shadow: 1px 1px 20px orange;
+  scroll-snap-align: start;
+}
+
+.cause-item h2 {
+  color: #fff;
   margin-bottom: 10px;
 }
 
-.tabs ul {
-  list-style-type: none;
-  padding-left: 0;
+.cause-item ul {
+  padding-left: 20px;
 }
 
-.tabs li {
+.cause-item li {
   margin-bottom: 5px;
 }
 
-.tabs a {
+.cause-item a {
+  color: #fff;
   text-decoration: none;
-  color: #e5da0d;
 }
 
-.tabs a:hover {
-  color: black;
+.cause-item a:hover {
+  text-decoration: underline;
+  color: #333;
 }
 
-.tabs a:visited {
-  color: rgb(3, 3, 3);
+.pr {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .footer {
